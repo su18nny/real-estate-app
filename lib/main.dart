@@ -49,8 +49,6 @@ class SplashScreen extends StatelessWidget {
                   ),
                 ),
               ),
-<<<<<<< HEAD
-=======
               Padding(
                 padding: const EdgeInsets.only(top: 30),
                 child: SizedBox(height: 52,width: 320,
@@ -62,8 +60,9 @@ class SplashScreen extends StatelessWidget {
                     ),
                     style: IconButton.styleFrom(backgroundColor: Colors.blue, ),
                   ),
->>>>>>> f66acaf094a2134e19231f049575d3c1e62f325e
 
+                ),
+              ),
 
             ],
           ),
