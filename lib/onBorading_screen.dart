@@ -8,7 +8,6 @@ class OnboradingScreen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenUtil=Dynamicscreenutil(context);
     return Scaffold(backgroundColor: Colors.white,
-
       body: SafeArea(
         child: Column(
           children: [
@@ -22,14 +21,29 @@ class OnboradingScreen1 extends StatelessWidget {
               ),
             ),
             SizedBox(height: 25),
-            // Title
-            Text(
-              'Lorem Ipsum is simply\n dummy text printing',
+            RichText(
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
+              text: TextSpan(
+                text: 'Lorem ',
+                style: TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+                children: [
+                  TextSpan(
+                    text: 'Ipsum is simply',
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  TextSpan(
+                    text: '\n dummy text printing',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
               ),
             ),
             SizedBox(height: 12),
@@ -37,16 +51,37 @@ class OnboradingScreen1 extends StatelessWidget {
               'Lorem Ipsum is simply dummy text of the\nprinting and typesetting industry.',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 17,
                 color: Colors.grey,
+                fontWeight: FontWeight.w400
               ),
             ),
+          Padding(
+            padding: const EdgeInsets.only(top: 220),
+            child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 5,vertical: 25),
+                          child: TextButton(onPressed: () {
+                          }, child: Text("Skip",style: TextStyle(color: Colors.blue,fontSize: 15),)),
+                        ),
+                        FloatingActionButton(onPressed: () {
+                        },child: Icon(Icons.arrow_forward),backgroundColor: Colors.blue,),
+                        
+                      ],
 
+                    ),
+                  ],
+                ),
+          ),
 
           ],
-
         ),
       ),
+
     );
   }
 }
