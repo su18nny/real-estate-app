@@ -55,7 +55,7 @@ class SplashScreen extends StatelessWidget {
                   child: IconButton(
                     onPressed: () {},
                     icon: Text(
-                      "Get Started",
+                      "Get Started with praveen",
                       style: TextStyle(color: Colors.white,fontSize: 20),
                     ),
                     style: IconButton.styleFrom(backgroundColor: Colors.blue, ),
