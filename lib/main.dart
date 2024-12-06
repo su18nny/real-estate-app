@@ -49,20 +49,7 @@ class SplashScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 30),
-                child: SizedBox(height: 52,width: 320,
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Text(
-                      "Get Started with praveen",
-                      style: TextStyle(color: Colors.white,fontSize: 20),
-                    ),
-                    style: IconButton.styleFrom(backgroundColor: Colors.blue, ),
-                  ),
 
-                ),
-              ),
 
             ],
           ),
