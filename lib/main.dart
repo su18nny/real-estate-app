@@ -52,8 +52,8 @@ class SplashScreen extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 38),
-                child: SizedBox(height: 52,width: 320,
+                padding: const EdgeInsets.only(top: 38,left: 10),
+                child: SizedBox(height: 52,width: 335,
                   child: ElevatedButton(onPressed: () {
 
                   }, child:Text("Get Started",style: TextStyle(color: Colors.white,fontSize: 20,letterSpacing: 4),),
