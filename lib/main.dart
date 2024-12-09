@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:real_estateui/onBorading_screen1.dart';
 
+
 import 'splash_screen.dart';
 
 void main() {
@@ -16,24 +17,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-  class Pageview extends StatelessWidget {
-    const Pageview({super.key});
-  
-    @override
-    Widget build(BuildContext context) {
-      final List<Widget> pages=[
-
-
-      ];
-      final PageController  pageController = PageController();
-      return PageView(
-        controller: pageController,
-        children: [
-
-        ],
-      );
-    }
-  }
-  
 
 

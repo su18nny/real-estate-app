@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:real_estateui/constants/images.dart';
 import 'package:real_estateui/onBorading_screen1.dart';
 import 'package:real_estateui/screenutil.dart';
@@ -51,7 +52,6 @@ class _SplashScreenState extends State<SplashScreen> {
                     style: ElevatedButton.styleFrom(backgroundColor: Colors.black87,shadowColor: Colors.white,elevation: 10),
                   ),
                 ),
-
               ),
 
             ],

@@ -62,6 +62,8 @@ flutter:
   assets:
    - assets/images/Splashscreen/
    - assets/images/onborading_screen1/
+   - assets/images/onboarding_screen2/
+   - assets/images/onboarding_screen3/
 
 
 
