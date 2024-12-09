@@ -12,7 +12,7 @@ class _OnboradingScreen1State extends State<OnboradingScreen1> {
   @override
   Widget build(BuildContext context) {
 
-    print("this ----->${curruntPage}");
+
     final screenUtil = Dynamicscreenutil(context);
     return Scaffold(
       backgroundColor: Colors.white,
