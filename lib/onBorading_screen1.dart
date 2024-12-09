@@ -88,7 +88,7 @@ class _OnboradingScreen1State extends State<OnboradingScreen1> {
                       RichText(
                         textAlign: TextAlign.center,
                         text: TextSpan(
-                          text: 'Lorem Ipsum is simply ',
+                          text: 'raj bannnnnnn',
                           style: TextStyle(
                             fontSize: 32,
                             fontWeight: FontWeight.bold,
