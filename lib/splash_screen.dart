@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:real_estateui/constants/images.dart';
-import 'package:real_estateui/onBorading_screen1.dart';
-import 'package:real_estateui/screenutil.dart';
+import 'package:real_estateui/Onboarding_screen/onBorading_screen1.dart';
+import 'package:real_estateui/constants/screenutil.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 

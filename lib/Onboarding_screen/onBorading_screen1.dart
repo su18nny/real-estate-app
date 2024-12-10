@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:real_estateui/screenutil.dart';
-import 'constants/images.dart';
+import 'package:real_estateui/constants/screenutil.dart';
+import 'package:real_estateui/login_screen/Login.dart';
+import '../constants/images.dart';
 class OnboradingScreen1 extends StatefulWidget {
   const OnboradingScreen1({super.key});
   @override
@@ -221,6 +222,7 @@ class _OnboradingScreen1State extends State<OnboradingScreen1> {
                                     curve: Curves.easeInOut,
                                   );
                                 } else {
+                                  Navigator.push(context,MaterialPageRoute(builder: (context) => Login(),));
                                 }
                               },
                               child: Icon(Icons.arrow_forward),
@@ -240,7 +242,8 @@ class _OnboradingScreen1State extends State<OnboradingScreen1> {
                         padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 25),
                         child: TextButton(
                           onPressed: () {
-                            _pageController.jumpToPage(2);
+                            Navigator.push(context,MaterialPageRoute(builder: (context) => Login(),));
+
                           },
                           child: Text(
                             "Skip",

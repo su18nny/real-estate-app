@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:real_estateui/onBorading_screen1.dart';
+import 'package:real_estateui/Onboarding_screen/onBorading_screen1.dart';
 
 
 import 'splash_screen.dart';
