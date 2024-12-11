@@ -18,14 +18,16 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
-          Container(
-            width: screenUtil.sizewidth(1) ,
-            height: screenUtil.sizehieght(0.7) ,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              image: DecorationImage(
-                  image: AssetImage(ImagePaths.startImage),
-                  fit: BoxFit.fitWidth
+          SingleChildScrollView(
+            child: Container(
+              width: screenUtil.sizewidth(1) ,
+              height: screenUtil.sizehieght(0.7) ,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                image: DecorationImage(
+                    image: AssetImage(ImagePaths.startImage),
+                    fit: BoxFit.fitWidth
+                ),
               ),
             ),
           ),
