@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:real_estateui/constants/images.dart';
 
 import '../constants/screenutil.dart';
-class Login extends StatefulWidget {
-  const Login({super.key});
+class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
-class _LoginState extends State<Login> {
+class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController user_controller=TextEditingController();
   TextEditingController pass_controller=TextEditingController();
 
@@ -147,7 +147,7 @@ class _LoginState extends State<Login> {
                             child: Container(child: ElevatedButton(onPressed: () {
                               isLogin();
                             }, child: Text("Sign In",style: TextStyle(color: Colors.white,letterSpacing: 1,fontWeight: FontWeight.w500),),
-                              style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF006EFF))
+                                style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF006EFF))
                             ),
 
                             ),
@@ -172,19 +172,10 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Image.asset(ImagePaths.Google, height: 22),
-                              SizedBox(width: 20,), // Added space between the images
+                              SizedBox(width: 10), // Added space between the images
                               Image.asset(ImagePaths.Facebook, height: 22),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                             Text("Dontt have an account?"),
-                              TextButton(onPressed: () {
-                                
-                              }, child: child)
                             ],
                           ),
                         ],
@@ -209,10 +200,10 @@ class _LoginState extends State<Login> {
                             TextSpan(
                               text: "\nUsername",
                               style: TextStyle(
-                                fontSize: 14.33,
-                                color: Color(0xFF091130),
-                                fontWeight: FontWeight.w500,
-                                height: 3.80
+                                  fontSize: 14.33,
+                                  color: Color(0xFF091130),
+                                  fontWeight: FontWeight.w500,
+                                  height: 3.80
                               ),
                             )
                           ],
@@ -223,7 +214,7 @@ class _LoginState extends State<Login> {
                 ),
 
 
-            ],
+              ],
             ),
           ),
         ),
