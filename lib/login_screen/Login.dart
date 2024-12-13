@@ -138,7 +138,7 @@ class _LoginState extends State<Login> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 6, top: 18),
+                      padding: const EdgeInsets.only(left: 0, top: 18),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
