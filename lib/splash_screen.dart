@@ -15,6 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     final screenUtil= Dynamicscreenutil(context);
     return Scaffold(
+      //jjjj
       backgroundColor: Colors.white,
       body: Column(
         children: [
