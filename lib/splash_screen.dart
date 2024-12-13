@@ -16,6 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     final screenUtil= Dynamicscreenutil(context);
     return Scaffold(
       //jjjj
+      //praveen
       backgroundColor: Colors.white,
       body: Column(
         children: [
