@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:real_estateui/constants/images.dart';
+import 'package:real_estateui/login_screen/signup_screen.dart';
 
 import '../constants/screenutil.dart';
 class Login extends StatefulWidget {
@@ -68,7 +69,6 @@ class _LoginState extends State<Login> {
 
                               decoration: InputDecoration(
                                 prefixIcon: Icon(Icons.person,color: Color(0xFF6A6A6A),),
-                                label: Text("Username",style: TextStyle(color: Color(0xFF6A6A6A),fontWeight: FontWeight.w600),),
                                 hintText: "Username",
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
@@ -123,7 +123,6 @@ class _LoginState extends State<Login> {
                                 }, icon: passwordVisible
                                     ? Icon(Icons.visibility_off,color: Colors.red,)
                                     :Icon(Icons.visibility,color: Color(0xFF6A6A6A),)),
-                                label: Text("Password",style: TextStyle(color: Color(0xFF6A6A6A),fontWeight: FontWeight.w600),),
                                 hintText:"Password",
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
@@ -219,7 +218,7 @@ class _LoginState extends State<Login> {
                                 ),
                                 TextButton(
                                   onPressed: () {
-                                    // Add navigation logic here
+                                    Navigator.push(context, MaterialPageRoute(builder: (context) => SignupScreen(),));
                                   },
                                   child: Text(
                                     "Sign up",

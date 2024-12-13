@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:real_estateui/constants/images.dart';
 
 import '../constants/screenutil.dart';
-class Login extends StatefulWidget {
-  const Login({super.key});
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
 
   @override
-  State<Login> createState() => _LoginState();
+  State<SignupScreen> createState() => _LoginState();
 }
 
-class _LoginState extends State<Login> {
+class _LoginState extends State<SignupScreen> {
   TextEditingController user_controller=TextEditingController();
   TextEditingController pass_controller=TextEditingController();
+  TextEditingController email_controller=TextEditingController();
 
   bool passwordVisible = true;
   var _signin = GlobalKey<FormState>();
@@ -68,7 +69,6 @@ class _LoginState extends State<Login> {
 
                               decoration: InputDecoration(
                                 prefixIcon: Icon(Icons.person,color: Color(0xFF6A6A6A),),
-                                label: Text("Username",style: TextStyle(color: Color(0xFF6A6A6A),fontWeight: FontWeight.w600),),
                                 hintText: "Username",
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
@@ -95,7 +95,6 @@ class _LoginState extends State<Login> {
                                   height: 0.1,
                                   color: Color(0xFF091130),
                                   fontWeight: FontWeight.w500,
-
                                 ),),
                               ],
                             ),
@@ -123,13 +122,45 @@ class _LoginState extends State<Login> {
                                 }, icon: passwordVisible
                                     ? Icon(Icons.visibility_off,color: Colors.red,)
                                     :Icon(Icons.visibility,color: Color(0xFF6A6A6A),)),
-                                label: Text("Password",style: TextStyle(color: Color(0xFF6A6A6A),fontWeight: FontWeight.w600),),
                                 hintText:"Password",
                                 border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                                 prefixIcon: Icon(Icons.key,color: Color(0xFF6A6A6A),),
 
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 22,bottom: 40),
+                            child: Row(
+                              children: [
+                                Text("Email Address",style: TextStyle(
+                                  fontSize: 14.33,
+                                  height: 0.1,
+                                  color: Color(0xFF091130),
+                                  fontWeight: FontWeight.w500,
+                                ),),
+                              ],
+                            ),
+                          ),
+
+                          Container(
+                            width: screenUtil.sizewidth(0.9),
+                            child: TextFormField(
+                              validator: (value) {
+                                if(value!.isEmpty||!RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(value)){
+                                  return "Please Enter Correct Email";
+                                }
+                                return null;
+                              },
+                              controller: email_controller,
+                              decoration: InputDecoration(
+                                hintText:"Email",
+                                prefixIcon: Icon(Icons.email,color: Color(0xFF6A6A6A),),
+                                border: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
                               ),
                             ),
                           ),
@@ -150,7 +181,7 @@ class _LoginState extends State<Login> {
                                 isLogin();
                               },
                               child: Text(
-                                "Sign In",
+                                "Sign up",
                                 style: TextStyle(
                                   color: Colors.white,
                                   letterSpacing: 1,
@@ -207,33 +238,6 @@ class _LoginState extends State<Login> {
                               ],
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(top: 5),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-
-                                Text(
-                                  "Don't have an account?",
-                                  style: TextStyle(color: Color(0xFF616161)),
-                                ),
-                                TextButton(
-                                  onPressed: () {
-                                    // Add navigation logic here
-                                  },
-                                  child: Text(
-                                    "Sign up",
-                                    style: TextStyle(
-                                      decoration: TextDecoration.underline,
-                                      fontSize: 15,
-                                    ),
-                                  ),
-                                  style: TextButton.styleFrom(overlayColor: Colors.white),
-                                ),
-
-                              ],
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -248,7 +252,7 @@ class _LoginState extends State<Login> {
                     children: [
                       RichText(
                         text: TextSpan(
-                          text: 'Sign In',
+                          text: 'Sign Up',
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
