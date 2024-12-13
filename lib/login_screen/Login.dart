@@ -138,60 +138,110 @@ class _LoginState extends State<Login> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 18),
+                      padding: const EdgeInsets.only(left: 6, top: 18),
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           SizedBox(
                             height: 52,
-                            width: 372,
-                            child: Container(child: ElevatedButton(onPressed: () {
-                              isLogin();
-                            }, child: Text("Sign In",style: TextStyle(color: Colors.white,letterSpacing: 1,fontWeight: FontWeight.w500),),
-                              style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF006EFF))
-                            ),
-
+                            width: 375,
+                            child: ElevatedButton(
+                              onPressed: () {
+                                isLogin();
+                              },
+                              child: Text(
+                                "Sign In",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  letterSpacing: 1,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(backgroundColor: Color(0xFF006EFF)),
                             ),
                           ),
+                          // Add spacing
+                          SizedBox(height: 10),
                           Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 25,horizontal: 30),
+                            padding: const EdgeInsets.only(top: 15),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-
                                 Expanded(
-                                  child: Divider(thickness: 1,color: Color(0xFF616161),endIndent: 5,indent: 25,),
+                                  child: Divider(
+                                    thickness: 1,
+                                    color: Color(0xFF616161),
+                                    endIndent: 5,
+                                    indent: 25,
+                                  ),
                                 ),
-
                                 Padding(
-                                  padding: const EdgeInsets.only(right: 4),
-                                  child: Text('Or continue with',style: TextStyle(color: Color(0xFF616161),fontWeight: FontWeight.w600),),
+                                  padding: const EdgeInsets.only(left: 5),
+                                  child: Text(
+                                    'Or continue with',
+                                    style: TextStyle(
+                                      color: Color(0xFF616161),
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
                                 ),
                                 Expanded(
-                                  child: Divider(thickness: 1,color: Color(0xFF616161),endIndent: 25,indent: 5,),
+                                  child: Divider(
+                                    thickness: 1,
+                                    color: Color(0xFF616161),
+                                    endIndent: 25,
+                                    indent: 5,
+                                  ),
                                 ),
                               ],
                             ),
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Image.asset(ImagePaths.Google, height: 22),
-                              SizedBox(width: 20,), // Added space between the images
-                              Image.asset(ImagePaths.Facebook, height: 22),
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.only(top: 20),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset(ImagePaths.Google, height: 22),
+                                SizedBox(width: 18,),
+                                Image.asset(ImagePaths.Facebook, height: 22),
+                              ],
+                            ),
                           ),
-                          Row(
-                            children: [
-                             Text("Dontt have an account?"),
-                              TextButton(onPressed: () {
-                                
-                              }, child: child)
-                            ],
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+
+                                Text(
+                                  "Don't have an account?",
+                                  style: TextStyle(color: Color(0xFF616161)),
+                                ),
+                                TextButton(
+                                  onPressed: () {
+                                    // Add navigation logic here
+                                  },
+                                  child: Text(
+                                    "Sign up",
+                                    style: TextStyle(
+                                      decoration: TextDecoration.underline,
+                                      fontSize: 15,
+                                    ),
+                                  ),
+                                  style: TextButton.styleFrom(overlayColor: Colors.white),
+                                ),
+
+                              ],
+                            ),
                           ),
                         ],
                       ),
                     ),
+
                   ],
+
                 ),
+
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 228,horizontal: 24),
                   child: Row(
