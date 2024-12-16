@@ -3,14 +3,14 @@ import 'package:real_estateui/constants/images.dart';
 import 'package:real_estateui/login_screen/Login_screen.dart';
 import '../constants/screenutil.dart';
 
-class SignupScreen extends StatefulWidget {
-  const SignupScreen({super.key});
+class ProfileScreen extends StatefulWidget {
+  const ProfileScreen({super.key});
 
   @override
-  State<SignupScreen> createState() => _LoginState();
+  State<ProfileScreen> createState() => _LoginState();
 }
 
-class _LoginState extends State<SignupScreen> {
+class _LoginState extends State<ProfileScreen> {
   TextEditingController user_controller = TextEditingController();
   TextEditingController pass_controller = TextEditingController();
   TextEditingController email_controller = TextEditingController();
@@ -24,7 +24,6 @@ class _LoginState extends State<SignupScreen> {
       return;
     }
   }
-
   @override
   Widget build(BuildContext context) {
     final screenUtil = Dynamicscreenutil(context);

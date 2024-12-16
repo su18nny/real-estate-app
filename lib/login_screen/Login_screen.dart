@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:real_estateui/constants/images.dart';
+import 'package:real_estateui/login_screen/Profile_screen.dart';
 import 'package:real_estateui/login_screen/signup_screen.dart';
 
 import '../constants/screenutil.dart';
@@ -146,6 +147,7 @@ class _LoginState extends State<Login> {
                             width: 375,
                             child: ElevatedButton(
                               onPressed: () {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen(),));
                                 isLogin();
                               },
                               child: Text(

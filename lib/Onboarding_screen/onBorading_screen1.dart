@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:real_estateui/constants/screenutil.dart';
-import 'package:real_estateui/login_screen/Login.dart';
+import 'package:real_estateui/login_screen/Login_screen.dart';
 import '../constants/images.dart';
 class OnboradingScreen1 extends StatefulWidget {
   const OnboradingScreen1({super.key});
