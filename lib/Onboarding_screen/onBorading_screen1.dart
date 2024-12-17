@@ -213,7 +213,6 @@ class _OnboradingScreen1State extends State<OnboradingScreen1> {
                                 foregroundColor: Colors.white,
                                 shape: CircleBorder(side: BorderSide(width: 0.1)),
                               ),
-
                               FloatingActionButton(
                                 onPressed: () {
                                   if (curruntPage < 2) {
@@ -229,10 +228,8 @@ class _OnboradingScreen1State extends State<OnboradingScreen1> {
                                 backgroundColor: Colors.blue,
                                 foregroundColor: Colors.white,
                                 shape: CircleBorder(side: BorderSide(width: 0.1)),
-
                               ),
                             ],
-
                           ),
                         ),
                     Row(
@@ -243,7 +240,6 @@ class _OnboradingScreen1State extends State<OnboradingScreen1> {
                           child: TextButton(
                             onPressed: () {
                               Navigator.push(context,MaterialPageRoute(builder: (context) => Login(),));
-
                             },
                             child: Text(
                               "Skip",
@@ -253,8 +249,6 @@ class _OnboradingScreen1State extends State<OnboradingScreen1> {
                         ),
                       ],
                     ),
-
-
                   ],
                 ),
 
