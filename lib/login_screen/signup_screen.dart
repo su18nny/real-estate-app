@@ -16,10 +16,10 @@ class _LoginState extends State<SignupScreen> {
   TextEditingController email_controller = TextEditingController();
 
   bool passwordVisible = true;
-  var _signin = GlobalKey<FormState>();
+  var _signup = GlobalKey<FormState>();
 
-  void isLogin() {
-    final _isValid = _signin.currentState!.validate();
+  void isSign() {
+    final _isValid = _signup.currentState!.validate();
     if (_isValid) {
       return;
     }
@@ -33,7 +33,7 @@ class _LoginState extends State<SignupScreen> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Form(
-            key: _signin,
+            key: _signup,
             child: Stack(
               children: [
                 Column(
@@ -195,7 +195,7 @@ class _LoginState extends State<SignupScreen> {
                             child: ElevatedButton(
                               onPressed: () {
                                 Navigator.push(context, MaterialPageRoute(builder: (context) => Login(),));
-                                isLogin();
+                                isSign();
 
                               },
                               child: Text(
