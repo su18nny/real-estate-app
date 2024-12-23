@@ -243,35 +243,39 @@ class _LoginState extends State<Login> {
 
                 ),
 
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 228,horizontal: 24),
-                  child: Row(
-                    children: [
-                      RichText(
-                        text: TextSpan(
-                          text: 'Sign In',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFF091130),
-                            letterSpacing: 1,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: "\nUsername",
+
+                   Padding(
+                     padding: const EdgeInsets.symmetric(horizontal:24 ),
+                     child: Container(height: screenUtil.sizehieght(0.6),
+                       child: Row(
+                        children: [
+                          RichText(
+                            text: TextSpan(
+                              text: 'Sign In',
                               style: TextStyle(
-                                fontSize: 14.33,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
                                 color: Color(0xFF091130),
-                                fontWeight: FontWeight.w500,
-                                height: 3.80
+                                letterSpacing: 1,
                               ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
+                              children: [
+                                TextSpan(
+                                  text: "\nUsername",
+                                  style: TextStyle(
+                                    fontSize: 14.33,
+                                    color: Color(0xFF091130),
+                                    fontWeight: FontWeight.w500,
+                                    height: 3.80
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
+                                         ),
+                     ),
+                   ),
+
 
 
             ],

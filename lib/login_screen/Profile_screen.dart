@@ -84,7 +84,7 @@ class _LoginState extends State<ProfileScreen> {
                             fontSize: 12,
                             color: Colors.grey,
                           ),
-                          ),SizedBox(height: 35,),
+                          ),SizedBox(height: 25,),
             InkWell(
               onTap: () {
                 getImageGallery();
@@ -142,7 +142,7 @@ class _LoginState extends State<ProfileScreen> {
                 ],
               ),
             ),
-            SizedBox(height: 50,),
+            SizedBox(height: 40,),
                         Container(width: screenUtil.sizewidth(0.9),
                           child: TextFormField(
                             validator: (value) {
@@ -234,7 +234,7 @@ class _LoginState extends State<ProfileScreen> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 360, horizontal: 24),
+                    padding: const EdgeInsets.symmetric(vertical: 345, horizontal: 24),
                     child: Row(
                       children: [
                         Text("Name",
@@ -249,7 +249,7 @@ class _LoginState extends State<ProfileScreen> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 472, horizontal: 24),
+                    padding: const EdgeInsets.symmetric(vertical: 455, horizontal: 24),
                     child: Row(
                       children: [
                         Text("Phone Number",
@@ -264,7 +264,7 @@ class _LoginState extends State<ProfileScreen> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 588, horizontal: 24),
+                    padding: const EdgeInsets.symmetric(vertical: 568, horizontal: 24),
                     child: Row(
                       children: [
                         Text("Email Address",

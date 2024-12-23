@@ -38,6 +38,7 @@ dependencies:
   image_picker: any
   intl_phone_field:
 
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
